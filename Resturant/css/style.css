@@ -1,0 +1,106 @@
+/* td{
+  border: 1px solid black;
+  margin: 7px;
+} */
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+body{
+background-color: rgba(255, 112, 0, 0.5);
+margin: 0;
+}
+
+#exp{
+background-color: rgba( 123, 0, 0, 0.1);
+}
+
+#resLogo{
+  width:100px;
+  height:80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#resLogo > img{
+  width: 100%;
+  height: 100%;
+}
+
+marquee{
+  position: absolute;
+  top:0px;
+  left: 100px;
+  height: 80px;
+  width: 1265px;
+}
+
+.container{
+height: 240px;
+overflow: hidden;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+p{
+  margin: 5px;
+}
+
+.segments{
+width: 380px;
+height: 150px;
+margin: 40px 10px;
+padding:5px;
+border-radius: 25px;
+}
+
+.blue{
+  background-color: rgba( 123, 123, 0, 0.4);
+}
+
+.yellow{
+  position: absolute;
+  top:80px;
+  left:480px;
+  background-color: rgba( 123, 0, 123, 0.3);
+}
+
+.orange{
+  background-color: rgba( 123, 0, 0, 0.3);
+  position: absolute;
+  top:80px;
+  left:950px;
+}
+
+.firstPic{
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.midPic{
+  position: absolute;
+  top:320px;
+  left:550px;
+}
+
+.lastPic{
+  position: absolute;
+  top:320px;
+  left:1030px;
+  width: 300px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba( 123, 0, 0, 0.3);
+}

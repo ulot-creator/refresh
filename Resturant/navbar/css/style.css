@@ -9,10 +9,7 @@
 }
 
 body{
-	/* important  */
-/* background-image: url("../image/IMG-20201015-WA0114.jpg"); */
-background-repeat: no-repeat;
-background-size: cover;
+background-image: url("../image/img one.jpg");	
 }
 
 nav{
@@ -80,26 +77,8 @@ nav ul li .active{
 	background-color: rgb(168, 174, 174);
 }
 
-.serv-div{
-	width: 30vw;
-	line-height: 2rem;
-	margin: 20px 0px 0px 20px;
-	display: inline-block;
-}
-
-.f{
-outline: 1px solid red;
-display: inline-block;
-}
-
-.oo{
-	background-image: url("../image/IMG-20201015-WA0114.jpg");
-}
-
-#y{
-	background-color: purple;
-}
-
-nav ul li .active{
-	color:rgba(0,0,255,0.8);
+#open{
+	height: 600px;
+	width: 500px;
+	border: 1px solid red;
 }
