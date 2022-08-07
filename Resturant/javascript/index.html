@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>This example calls a function which performs a calculation, and returns the results:</p>
+<p id="demo">Have a nice day</p>
+<button type="button" name="button" onclick="replace() ">failure</button>
+
+<form class="" name="myForm" action="index.html" method="post" onsubmit="return validateForm()">
+  Number: <input type="text" name="fname" value="">
+  <input type="submit" name="" value="submit">
+</form>
+
+    <script>
+    /*
+      function myfunction(p1,p2){
+        return p1 * p2
+      }
+      document.getElementById('demo').innerHTML = myfunction(4,3);
+      // mass of an object m = f*a, density * volume
+      // w = m * g m=75 g=10 pi r ** 2
+      function mass(){
+        var grav , mass, weight;
+        grav = 10;
+        mass = 75;
+        weight = mass * grav;
+        return weight;
+      }
+
+      var pi, r;
+      pi = 3.142;
+      r = 10;
+
+      function circArea(){
+        var area;
+        area = pi * (r * r);
+        return area;
+      }
+    console.log("The area of the circle with radius " + r + " is " + circArea());
+
+    var human = {
+      name:"Tolu",
+      height:198,
+      laptop:"windows",
+      os:"windows"
+    };
+
+    console.log("Humans name is " + human.name + " he is " + human.height + "cm tall and uses a " + human.laptop + " with a " + human.os + " os." );
+
+    var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var sin = txt.length;
+    console.log("The total number of alphabats is " + sin);
+
+    //the forward slash acts as escape.....normally the code won't work
+    var test = "We are the so called \"Vikings\" from the north";
+    var locate = test.indexOf("the");
+    var rem = test.slice(3,6);
+    console.log(rem);
+
+    let lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+    var comot = lorem.substr(8,4);
+    //substring()doesn't take nega value
+    //it counts from the back when it is neg value for slice
+    //substr()first value is starting point, second is number of values
+    //replace....self explanatory
+      console.log(comot);*/
+
+/*
+assignment
+create a function and use mouse over to change a text and replace the name?
+
+time to fail woefully lol
+*/
+
+
+  function replace() {
+    var sample = document.getElementById("demo").innerHTML;
+    var cond = sample.replace("day","day you");
+    document.getElementById("demo").innerHTML = cond;
+  }
+   // function rereplace() {
+   //   var sample = document.getElementById("demo").innerHTML;
+   //   console.log(sample);
+   //   var cond = sample.replace("day","day you");
+   //   document.getElementById("demo").innerHTML = cond;
+   // }
+
+   //console.log(0.1000000 + "10");
+
+
+  // function validateForm() {
+  //   var x = document.forms["myForm"]["fname"].value;
+  //   if (x == "") {
+  //     alert("Name must be filled out");
+  //     return false;
+  //   }
+  // }
+  // var score = prompt("Enter your score");
+  // if (score <= 120) {
+  //   console.log("try next time");
+  // }else {
+  //   console.log("you are qualified");
+  // }
+
+  //another assignment
+
+
+          // var amount, month;
+          // amount = prompt("How much do you have ");
+          // month = prompt("what month is it ");
+          //   if (amount >= 200) {
+          //     if (month >= 8) {
+          //       console.log("you're qualified");
+          //     }else {
+          //       console.log("almost there");
+          //     }
+          //   }else {
+          //     console.log("start saving");
+          //   }
+          //
+          //   // alt
+          // if (amount >= 200 && month >= 8) {
+          //   console.log("you're qualified");
+          // }else {
+          //   console.log("keep trying");
+          // }
+var month = new Date().getMonth();
+switch (month) {
+  case 0:
+  case 2:
+  case 4:
+  case 6:
+  case 7:
+  case 9:
+  case 11:
+    console.log("this month has 31 days");
+    break;
+  case 3:
+  case 5:
+  case 8:
+  case 10:
+    console.log("this month has 30 days");
+  default:
+    console.log("feb is that you?");
+    break;
+}
+    </script>
+  </body>
+</html>
