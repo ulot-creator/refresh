@@ -3,13 +3,62 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+
+    <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+      .vertNav{
+        width: 150px;
+        height: 100vh;
+        text-align: center;
+        background-color: grey;
+        float: left;
+      }
+
+      .vertNav li{
+        list-style: none;
+        margin: 5px;
+        /*border: 1px solid red;*/
+        border-radius: 15px;
+        background-color: rgba(0,255,0,0.5);
+      }
+      .vertNav li a{
+        text-decoration: none;
+        font-size: 25px;
+        margin: 25px;
+        padding: 5px;
+        color: #fff;
+      }
+
+      .vertNav li a:hover{
+        font-size: 30px;
+        color: yellow;
+      }
+    </style>
   </head>
   <body>
-    <p>This example calls a function which performs a calculation, and returns the results:</p>
-<p id="demo">Have a nice day</p>
+    <div class="vertNav">
+      <li> <a href="#">Home</a> </li>
+      <li> <a href="#">About</a> </li>
+      <li> <a href="#">Services</a> </li>
+      <li> <a href="#">Help</a> </li>
+      <li> <a href="#">Contact</a> </li>
+    </div>
+ <div id="demo">
+
+ </div>
+
+
+
+
+
+  <!--  <p id="replace">This example calls a function which performs a calculation, and returns the results:</p>
+<p id="demo"></p>
 <button type="button" name="button" onclick="replace() ">failure</button>
 
-<form class="" name="myForm" action="index.html" method="post" onsubmit="return validateForm()">
+ <form class="" name="myForm" action="index.html" method="post" onsubmit="return validateForm()">
   Name: <input type="text" name="fname" value=""> <br>
   Phone: <input type="number" name="Pnum" value="" id="Pnum"> <br>
   Address: <input type="text" name="addy" value="" id="addy"> <br>
@@ -17,9 +66,26 @@
   Duration: <input type="text" name="time" value="" id="time">
   Amount: <input type="number" name="amount" value="" id="amount">
   <input type="submit" name="" value="submit">
-</form>
+</form> -->
 
     <script>
+//countries in demo
+// var countries = ["Nigeria", "Ghana", "Benin", "Zambia", "Zimbabwe"];
+// var i;
+// var input = ""
+// for (i = 0; i < countries.length; i++) {
+//   input = input + countries[i] + "&nbsp; &nbsp;";
+// }
+// document.getElementById('demo').innerHTML = input;
+var images = ["../images/fu.png", "../images/html logo.png", "../images/smoothShots.png"];
+var i;
+var put = "";
+for (var i = 0; i < images.length; i++) {
+  put +=images[i] + "<br>";
+}
+document.getElementById('demo').innerHTML = put;
+
+
     /*
       function myfunction(p1,p2){
         return p1 * p2
@@ -95,29 +161,29 @@ time to fail woefully lol
   //  //console.log(0.1000000 + "10");
 
 
-  function validateForm() {
-    var fname = document.forms["myForm"]["fname"].value;
-    var course = document.forms["myForm"]["course"].value;
-    var time = document.forms["myForm"]["time"].value;
-    var amount = document.forms["myForm"]["amount"].value;
-    console.log("working");
-    if (amount == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-
-    if (time == "") {
-      console.log("working2");
-      return false;
-
-     }
-   if (course == "") {
-     console.log("working3");
-     return false;
-
-    }
-
-  }
+  // function validateForm() {
+  //   var fname = document.forms["myForm"]["fname"].value;
+  //   var course = document.forms["myForm"]["course"].value;
+  //   var time = document.forms["myForm"]["time"].value;
+  //   var amount = document.forms["myForm"]["amount"].value;
+  //   console.log("working");
+  //   if (amount == "") {
+  //     alert("Name must be filled out");
+  //     return false;
+  //   }
+  //
+  //   if (time == "") {
+  //     console.log("working2");
+  //     return false;
+  //
+  //    }
+  //  if (course == "") {
+  //    console.log("working3");
+  //    return false;
+  //
+  //   }
+  //
+  // }
   // var score = prompt("Enter your score");
   // if (score <= 120) {
   //   console.log("try next time");
