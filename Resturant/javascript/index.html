@@ -5,6 +5,8 @@
     <title></title>
 
     <style media="screen">
+
+    /* note to self to make the colours highlight when they are active change the class on each individual page ( that .active bs... looks nice ) */
     *{
       margin: 0px;
       padding: 0px;
@@ -36,15 +38,27 @@
         font-size: 30px;
         color: yellow;
       }
+      .subNav{
+        display: none;
+      }
+      .mainDrop:hover .subNav{
+        display: block;
+
+      }
     </style>
   </head>
   <body>
     <div class="vertNav">
-      <li> <a href="#">Home</a> </li>
-      <li> <a href="#">About</a> </li>
-      <li> <a href="#">Services</a> </li>
-      <li> <a href="#">Help</a> </li>
-      <li> <a href="#">Contact</a> </li>
+      <div class="mainDrop">
+        <li> <a href="index.html">Home</a> </li>
+        <div class="subNav">
+            <li> <a href="#">sub1</a> </li>
+            <li> <a href="#">sub2</a> </li>
+            <li> <a href="#">sub3</a> </li>
+        </div>
+      </div>
+      <li> <a href="Gallery.html">Gallery</a> </li>
+      <li> <a href="contact.html">Contact</a> </li>
     </div>
  <div id="demo">
 
@@ -77,11 +91,17 @@
 //   input = input + countries[i] + "&nbsp; &nbsp;";
 // }
 // document.getElementById('demo').innerHTML = input;
-var images = ["../images/fu.png", "../images/html logo.png", "../images/smoothShots.png"];
+
+
+// images put with js directly
+// notice the tags had to be used.
+
+
+var images = ["images/fu.png", "images/html logo.png", "images/smoothShots.png"];
 var i;
 var put = "";
 for (var i = 0; i < images.length; i++) {
-  put +=images[i] + "<br>";
+  put += "<img src=" + images[i] + ">"+ "<br>";
 }
 document.getElementById('demo').innerHTML = put;
 

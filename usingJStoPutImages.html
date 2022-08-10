@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    margin: 0;
+}
+ul {
+    background-color: brown;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 100%;
+    width: 25%;
+    position: fixed;
+}
+li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+li a:hover:not(.active){
+    background-color: bisque;
+    color: white;
+}
+.active{
+    background-color: blue;
+    color: white;
+}
+</style>
+
+</head>
+<body>
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#services">services</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+
+<div style="margin-left:25%; padding:16px; height:1000px;">
+    <p id="demo"></p>
+    <script>
+        var food = ["spaghetti.jpg", "potatofries.jpg", "friedrice.jpg", "whiterice.jpg"];
+        var text = "";
+        var i;
+        for (i = 0; i<food.length; i++) {
+        text +=  "<img src="+food[i]+">" + "<br>";
+        
+        "<br/>";
+        }
+        document.getElementById("demo").innerHTML = text;
+        </script>
+</div>
+    
+</body>
+</html>
