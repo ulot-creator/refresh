@@ -14,6 +14,7 @@ ul{
     width: 25%;
     overflow: auto;
     position: fixed;
+    display: none;
 }
 li a{
     display: block;
@@ -41,9 +42,31 @@ a.active {
     <li><a href="/contacts.html">Contact</a></li>
     <li><a href="/info.html">About us</a></li>
 </ul>
-<div style="margin-left:25%; padding: 16px; height: 1000px;">
-    <p>gugyfff</p>
-</div>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+<div id="result"></div>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+
+</script>
 
 </body>
 </html>

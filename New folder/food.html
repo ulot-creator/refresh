@@ -55,9 +55,21 @@ a.active {
     </figure>
 
     <video width="320" height="240" controls>
-  <source src="cod.mp4" type="video/mp4">]
+  <source src="cod.mp4" type="video/mp4">
+    <!-- geolocation api // drag and drop -->
 </video>
 </div>
 
+<div id="result"></div>
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
 </body>
 </html>

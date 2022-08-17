@@ -60,16 +60,52 @@ margin:auto;
     <p style="color:bisque">We have variety of dishes that are mouth-watering and made specially for you. Don't get to hungry all you need to do is place an order and receive the food at your doorstep in less than thirty minutes.
     In the mean time, try taking a look at our dishes in order for you to know the amount of dishes you need to order because a taste of our food takes your appetite to another level. </p>
     <div class="row">
-      <div style="background-color: whitesmoke; margin:auto;" class="column"><img style="width:70%; height:70%;" src="download.jpg" alt="yyy"><figcaption style="color:#4CA;">Jollof rice with chicken and cabbage: N3000</figcaption></div>
-      <div style="background-color: white; margin:auto;" class="column"><img style="width:70%; height:70%;" src="images.jpg" alt=""><figcaption style="color:#4CA;">Plain beans: N1500</figcaption></div>
-      <div style="background-color:whitesmoke; margin:auto;" class="column"><img style="width:70%; height:70%;" src="friedrice.jpg" alt=""><figcaption style="color:#4CA;">Fried rice with chicken and salad: N3500</figcaption></div>
-      <div style="background-color: white; margin:auto;" class="column"><img style="width:70%; height:70%;" src="potatofries.jpg" alt=""><figcaption style="color:#4CA;">Potato fries and ketchup: N3000</figcaption></div>
-      <div style="background-color: whitesmoke; margin:auto;" class="column"><img style="width:70%; height:70%;" src="whiterice.jpg" alt=""><figcaption style="color:#4CA;">White rice and stew with plantain and beef: N3500</figcaption></div>
-      <div style="background-color: white; margin:auto;" class="column"><img style="width:70%; height:70%;" src="/spaghetti.jpg" alt=""><figcaption style="color:#4CA;">Spaghetti and boiled egg with beef:N3500</figcaption></div>
+      <div style="background-color: white; margin:auto;" class="column">
+        <img style="width:70%; height:70%;" src="images.jpg" alt="">
+        <figcaption style="color:#4CA;">Plain rice: N1000</figcaption>
+        <p><button onclick="clickCounter()" type="button">Like</button></p>
+        <div id="result"></div>
+      </div><br>
+      <div style="background-color: white; margin:auto;" class="column">
+        <img style="width:70%; height:70%;" src="images.jpg" alt="">
+        <figcaption style="color:#4CA;">Plain beans: N1500</figcaption>
+      </div><br>
+      <div style="background-color:whitesmoke; margin:auto;" class="column">
+        <img style="width:70%; height:70%;" src="friedrice.jpg" alt="">
+        <figcaption style="color:#4CA;">Fried rice with chicken and salad: N3500
+        </figcaption>
+      </div><br>
+      <div style="background-color: white; margin:auto;" class="column">
+        <img style="width:70%; height:70%;" src="potatofries.jpg" alt="">
+        <figcaption style="color:#4CA;">Potato fries and ketchup: N3000
+        </figcaption>
+      </div><br>
+      <div style="background-color: whitesmoke; margin:auto;" class="column">
+        <img style="width:70%; height:70%;" src="whiterice.jpg" alt="">
+        <figcaption style="color:#4CA;">White rice and stew with plantain and beef: N3500
+        </figcaption>
+      </div><br>
+      <div style="background-color: white; margin:auto;" class="column">
+        <img style="width:70%; height:70%;" src="/spaghetti.jpg" alt="">
+        <figcaption style="color:#4CA;">Spaghetti and boiled egg with beef:N3500
+        </figcaption>
+      </div><br>
     </div>
 
 
 </div>
 
+
+<script>
+function clickCounter() {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = localStorage.clickcount + " like";
+  }
+
+</script>
 </body>
 </html>
