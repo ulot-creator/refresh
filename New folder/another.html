@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<h2>Finding HTML Elements by Id</h2>
+<h2>Removing an HTML Elements </h2>
 
-<p id="id01">Hello World!</p>
-<p id="id02">Hello Sweden!</p>
-<p id="id03">Hello Japan!</p>
+<p id="id01">Javascript can change the style of an html element.</p>
 
 <p id="demo"></p>
 
 <script>
-$(document).ready(function() {
-  var myElements = $("#id01");
-  $("#demo").text("The text from the id01 paragraph is: " + myElements[0].innerHTML);
-});
+  $(document).ready(function(){
+var myElement = $('#id01');
+myElement.css("font-size", "100px");
+})
 </script>
 
 </body>
